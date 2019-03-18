@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/llScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:id="@+id/imagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tnlogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/tnlogo" />
+
+                <ImageView
+                    android:id="@+id/emblem"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/emblemlogo" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sentencelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelayout"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/corporationofchni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="CORPORATION OF KUMBAKONAM"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/corporationofchni"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="DEPARTMENT OF PUBLIC HEALTH"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/bcertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dph"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="BIRTH CERTIFICATE"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bcertificate"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="ISSUED UNDER SECTION 12/17 OF REGISTRATION OF BIRTH AND DEATH ACT 1969"
+                    android:textColor="#000000"
+                    android:textSize="8dp" />
+
+                <TextView
+                    android:id="@+id/NOTIFY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/section"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="This isto certify the the following information has been taken from the original record of birth of the corporation of Kumbakonam of the State of TamilNadu,India"
+                    android:textColor="#000000"
+                    android:textSize="8dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sentencelayout"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:textSize="10sp"
+                    android:text="KAVYA K"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="Sex"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/sex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name1"
+android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="FEMALE"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sex"
+                    android:paddingBottom="5dp"
+                    android:text="Date of Birth"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/dob1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sex1"
+
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="04-09-1999"
+                    android:textSize="10sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/pob"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dob"
+                    android:paddingBottom="5dp"
+                    android:text="Place of Birth"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/pob1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dob1"
+                    android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="kumbakonam"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/nof"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pob"
+                    android:paddingBottom="5dp"
+                    android:text="Name of Father"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/nof1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pob1"
+                    android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="kumar"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nof"
+                    android:paddingBottom="5dp"
+                    android:text="Name of Mother"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/nom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nof1"
+                    android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingBottom="5dp"
+                    android:text="Lakshmi"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/prad"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nom"
+                    android:paddingBottom="5dp"
+                    android:text="Permanent Residential Address"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/prad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nom1"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/prad"
+                    android:paddingBottom="5dp"
+                    android:text="dghdrhb udofhuod dfgujadh kjdaghfuahgfoui jgfuadsjh"
+                    android:textColor="#000000"
+                    android:singleLine="false"
+                    android:lines="4"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/rn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prad"
+                    android:paddingTop="50dp"
+                    android:text="Registration Number"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/rn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prad1"
+                    android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingTop="15dp"
+                    android:text="22/34/5/2/7"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/doi"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rn"
+                    android:paddingTop="5dp"
+                    android:text="Date of Issue"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/doi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rn1"
+                    android:textSize="10sp"
+                    android:layout_toEndOf="@id/name"
+                    android:paddingTop="5dp"
+                    android:text="12-9-1999"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/cho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doi1"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="45dp"
+                    android:paddingEnd="35dp"
+                    android:text="Chief health Officer"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cho"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="18dp"
+                    android:text="Corporation of Kumbakonam"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cok"
+                    android:layout_centerHorizontal="true"
+                    android:text="Ensure registration of every Birth and Death"
+                    android:textColor="#000000"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:id="@+id/ensure"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ensure"
+
+                    android:text="Note:This certificate is computer generated.The registration number is unique in to each birth certificate"
+
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="download"
+        android:textColor="#ffffff" />
+</RelativeLayout>

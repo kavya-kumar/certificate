@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLICATION FOR BIRTH CERTIFICATE"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/heading"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_below="@id/heading"
+                android:paddingTop="60dp"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:id="@+id/name3"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:layout_below="@id/name3"
+                android:id="@+id/sex3"
+                android:paddingTop="15dp"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Father's Name"
+                android:id="@+id/fn3"
+                android:layout_below="@id/sex3"
+                android:paddingTop="19dp"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Mother's Name"
+                android:id="@+id/mn3"
+                android:layout_below="@id/fn3"
+                android:paddingTop="30dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/name3"
+                android:id="@+id/name4"
+                android:paddingTop="50dp"
+                android:layout_below="@id/heading"
+                android:inputType="text"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name4"
+                android:layout_toEndOf="@id/sex3"
+                android:paddingTop="12dp"
+                android:orientation="horizontal"
+                android:id="@+id/rdgroup">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/male"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/female"
+
+                    />
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/fn3"
+                android:paddingTop="10dp"
+                android:id="@+id/fn4"
+                android:inputType="text"
+
+                android:layout_below="@id/rdgroup"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/fn3"
+                android:paddingTop="20dp"
+                android:id="@+id/mn4"
+                android:inputType="text"
+                android:layout_below="@id/fn4"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mn3"
+                android:text="Permanent Address"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:id="@+id/peadd3"
+                android:paddingTop="80dp"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/peadd4"
+                android:layout_below="@id/mn4"
+                android:singleLine="false" android:lines="3"
+                android:paddingTop="20dp"
+                android:layout_toEndOf="@id/peadd3"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:layout_below="@id/peadd3"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:id="@+id/dob3"
+                android:paddingTop="40dp"/>
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/dob3"
+                android:layout_below="@id/peadd4"
+                android:id="@+id/dob4"
+                android:paddingTop="25dp"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pinkcalendar"
+                android:layout_below="@id/peadd4"
+                android:id="@+id/ibutton"
+                android:layout_toEndOf="@id/dob4"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dd-MMM-yyyy"
+                android:layout_toEndOf="@id/dob3"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:id="@+id/dmy"
+                android:layout_below="@+id/dob4"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:text="preview"
+                android:layout_below="@id/dmy"
+                android:paddingTop="0dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:id="@+id/button"/>
+        </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
